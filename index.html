@@ -1,167 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Andy Huynh" />
-        <meta name="copyright" content="Andy Huynh" />
+<html>
+<head>
+  <title>Dung's Projects</title>
+  <link rel="stylesheet" href="bootstrap.css" />
 
-        <title>Home
-</title>
-        <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./theme/css/style.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="./theme/css/solarizedlight.css" media="screen">
-        <link rel="shortcut icon" href="./theme/images/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png" />
-        <link rel="apple-touch-icon" sizes="57x57" href="./theme/images/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="./theme/images/apple-touch-icon-144x144.png" />
-        <link rel="icon" href="./theme/images/apple-touch-icon-144x144.png" />
-        <link href="localhost:8899/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Home - Full Atom Feed" />
-        <link href="localhost:8899/feeds/Computer-Vision.atom.xml" type="application/atom+xml" rel="alternate" title="Home - Computer Vision Category Atom Feed" />
-        <link href="localhost:8899/feeds/Practical-ML.atom.xml" type="application/atom+xml" rel="alternate" title="Home - Practical ML Category Atom Feed" />
-        <link href="localhost:8899/feeds/Theoretical-ML.atom.xml" type="application/atom+xml" rel="alternate" title="Home - Theoretical ML Category Atom Feed" />
-    </head>
-    <body>
-        <div id="content-sans-footer">
-        <div class="navbar navbar-static-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="./"><span class=site-name>Home</span></a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav pull-right top-menu">
-                            <li  class="active"><a href=".">Home</a></li>
-                            <li ><a href="./categories.html">Categories</a></li>
-                            <li ><a href="./tags.html">Tags</a></li>
-                            <li ><a href="./archives.html">Archives</a></li>
-                            <li><form class="navbar-search" action="./search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
-                        </ul>
-                    </div>
+</head>
+<body>
+  <header>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="" class="navbar-brand d-flex align-items-center">
+          <strong>Home</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="jumbotron text-center bg-white">
+    <div class="container">
+      <h1 class="jumbotron-heading">Dung's Projects</h1>
+      <p class="lead text-muted">
+      </p>
+        <a href="https://www.facebook.com/jack.frost.24296" class="btn btn-primary my-2">Like on Facebook</a>
+        <a href="https://mail.google.com/mail/u/0/?tab=wm" class="btn btn-secondary my-2" style="padding-left:50px; padding-right: 50px">Email me</a>          </p>
+    </div>
+  </section>
+  <div class="container" style="padding-bottom: 100px;">
+    <div class="d-flex flex-row">
+      <div class="d-flex justify-content-center align-items-center">
+          <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="data:image/jpeg;base64,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" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16413b7b527%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16413b7b527%22%3E%3Crect%20width%3D%22208%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2265.9921875%22%20y%3D%22117.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+                <div class="card-body">
+                  
+                      <center><a href="https://github.com/dunghuynh24/aptech-php13-dunghuynh" class="btn btn-sm btn-outline-secondary">Aptech Softech</a></center>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="span1"></div>
-                <div class="span10">
-<div class="row-fluid">
-
-    <div class="row-fluid">
-
-        <div class="span4">
-            <header>
-            <h1 id="my-projects">My Projects</h1>
-            <ul class="list-all-articles">
-                <li>
-                <a href="https://github.com/experiencor/self-driving-toy-car" title="Self Driving Toy Car">Self Driving Toy Car</a> <span class="proj_desc">A lane follower using a toy RC car and end to end learning.</span>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="https://github.com/experiencor/basic-yolo-keras" title="Object Detection">Object Detection</a> <span class="proj_desc">A clean implementation of YOLOv2 for object detection using keras.</span>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="https://github.com/experiencor/image-to-3d-bbox" title="3D Box Regression">3D Box Regression</a> <span class="proj_desc">A deep network to predict 3D bouding box of car in 2D image.</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="row-fluid">
-        <div class="span12">
-            <header>
-            <h1 id="recent-posts">Recent Posts <a id="allposts" href="./archives.html">all posts</a></h1>
-            </header>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./basic_ml.html">A Review of Machine Learning Algorithms  </a> 
-                <time pubdate="pubdate" datetime="2017-07-07T22:00:00+02:00">Jum 07 Juli 2017</time>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./cnn_visual.html">Visualizing and Understanding Convolutional Network  </a> 
-                <time pubdate="pubdate" datetime="2017-06-22T20:00:00+02:00">Kam 22 Juni 2017</time>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./self_driving_toy_car.html">Self Driving Toy Car  </a> 
-                <time pubdate="pubdate" datetime="2017-06-13T20:00:00+02:00">Sel 13 Juni 2017</time>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./ftrl_adp.html">Follow the Regularized Leader with Adaptive Decaying Proximal  </a> 
-                <time pubdate="pubdate" datetime="2017-05-15T22:10:00+02:00">Sen 15 Mei 2017</time>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./sdc_3d.html">3D Vehicle Detection  </a> 
-                <time pubdate="pubdate" datetime="2017-05-01T22:10:00+02:00">Sen 01 Mei 2017</time>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./yolo_keras.html">Basic Yolo with Keras  </a> 
-                <time pubdate="pubdate" datetime="2017-03-22T22:00:00+01:00">Rab 22 Maret 2017</time>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./segmentation.html">Image Segmentation  </a> 
-                <time pubdate="pubdate" datetime="2017-02-19T08:00:00+01:00">Min 19 Pebruari 2017</time>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./weight_init.html">Weight Initialization  </a> 
-                <time pubdate="pubdate" datetime="2017-01-26T10:00:00+01:00">Kam 26 Januari 2017</time>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./learning_rate.html">Problem with Sigmoid and Sum of Squares Loss  </a> 
-                <time pubdate="pubdate" datetime="2017-01-17T22:30:00+01:00">Sel 17 Januari 2017</time>
-                </li>
-            </ul>
-            <ul class="list-all-articles">
-                <li>
-                <a href="./object_tracking.html">Object Tracking  </a> 
-                <time pubdate="pubdate" datetime="2017-01-14T22:30:00+01:00">Sab 14 Januari 2017</time>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="https://yt3.ggpht.com/a-/ACSszfFltLz3PnobWXAPHFFxeP4Qd10mAsZFPwNhAA=s900-mo-c-c0xffffffff-rj-k-no" style="height: 225px; width: 100%; display: block;">
+                  <div class="card-body">
+                      <center><a href="https://github.com/dunghuynh24/Python" class="btn btn-sm btn-outline-secondary">Python's Project</a></center>      
+                  </div>
                 </div>
-                <div class="span1"></div>
-            </div>
-        </div>
+              </div>
+      </div>
     </div>
-<footer>
-<div id="footer">
-    <ul class="footer-content">
-        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
-    </ul>
-</div>
-</footer>        <script src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
-    </body>
+  </div>
+  <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>This example is © Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+</body>
 </html>
