@@ -7,13 +7,45 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body style="background-image:url('http://mirafra.com/wp-content/uploads/2016/10/Light-Grey-Background-Hd-5-1024x640.jpg')">
+  <div id="demo" style="display: none"><!--information-->
+    <div class="container-fluid p-0">
+      <div class="d-flex">
+        <div class="col-md-8 bg-dark py-3">
+          <div class="text-white pl-47 pr-30">
+            <h4><b>Dung's Projects</b></h4>
+            <p class="text-muted">
+                Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 bg-dark">
+          <div class="text-white py-3">
+            <h4><b>Contact</b></h4>
+            <ul class="ln">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
   <header class="container-fluid p-0">
-    <div class="d-flex flex-row">
-      <div class="col-6 bg-dark py-3">
-          <i class="far fa-camera-alt"></i>       
+    <div class="d-flex row">
+      <div class="col bg-dark py-3">
+                
         <a href="https://dunghuynh24.github.io/"><h5 class="text-white  pl-60"><b>Home</b></h5></a>
       </div>
-      <div class="col-6 bg-dark">
+      <div class="col bg-dark row align-items-center d-flex justify-content-end">
+        
+            <div onclick="myinf()" class="bd-2 mr-50">
+                <div class="bd-1 py-1"></div>
+                <div class="bd-1 py-1"></div>
+                <div class="bd-1 py-1"></div>
+                
+              </div>
         
       </div>
     </div>
@@ -68,6 +100,18 @@
           </div>
         </div>
       </div>
+      <div class="col-md-4 pt-50">
+        <div class="card ">
+          <div class="card-header">
+            <img src="seven-5.jpg" style="height: 225px; width: 100%; display: block;" >
+          </div>
+          <div class="card-body">
+            <center>
+              <a href="https://github.com/dunghuynh24/Math-7" class="btn btn-sm btn-outline-secondary">Math 7</a>
+            </center>  
+          </div>
+        </div>
+      </div>
   </section>
 
  
@@ -80,5 +124,10 @@
             <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
           </div>
         </footer>
+        <!--js-->
+      <script src="dung.js">
+        
+      </script>
+
 </body>
 </html>
